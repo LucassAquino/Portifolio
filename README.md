@@ -7,6 +7,10 @@ Projeto que mostra quais foram meus principais projetos durante a minha carreira
 
 Este repositório contém um site de portfólio single-page que mostra projetos, uma página inicial com uma breve apresentação, e uma página de contato. A seção de projetos permite buscar por título e navegar para uma página de detalhes de cada projeto.
 
+Para acessar o projeto deployado no Vercel, acesse
+
+`https://portifolio-liart-psi.vercel.app/`
+
 Principais funcionalidades:
 - Página inicial com breve apresentação e lista de projetos
 - Busca por projetos (campo de pesquisa)

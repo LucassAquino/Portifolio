@@ -1,16 +1,69 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfólio - Lucas dos Reis Aquino
 
-Currently, two official plugins are available:
+Projeto que mostra quais foram meus principais projetos durante a minha carreira como desenvolvedor.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descrição
 
-## React Compiler
+Este repositório contém um site de portfólio single-page que mostra projetos, uma página inicial com uma breve apresentação, e uma página de contato. A seção de projetos permite buscar por título e navegar para uma página de detalhes de cada projeto.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Principais funcionalidades:
+- Página inicial com breve apresentação e lista de projetos
+- Busca por projetos (campo de pesquisa)
+- Página de detalhes do projeto com tecnologias e descrição
+- Navegação entre páginas usando React Router
 
-## Expanding the ESLint configuration
+## Tecnologias e bibliotecas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O projeto utiliza as seguintes tecnologias:
+
+- React 19
+- Vite (ferramenta de build e dev server)
+- React Router Dom (roteamento)
+- Lucide React (ícones)
+- React Icons (ícones)
+- ESLint (linting)
+
+## Instalação
+
+1. Clone o repositório:
+
+```bash
+git clone <url-do-repositorio>
+cd portfolio
+```
+
+2. Instale dependências:
+
+```powershell
+npm install
+```
+
+## Como executar
+
+Inicie o servidor de desenvolvimento:
+
+```powershell
+npm run dev
+```
+
+Abra no navegador:
+
+http://localhost:5173
+
+Para gerar build de produção:
+
+```powershell
+npm run build
+```
+
+## Estrutura do projeto (resumo)
+
+- `src/` - código-fonte React
+	- `components/` - componentes reutilizáveis (Header, Footer, ProjectCard, etc.)
+	- `pages/` - páginas (Home, Projects, ProjectInfo, Contact)
+	- `routes/` - definição de rotas
+	- `data/` - dados estáticos (lista de projetos)
+- `public/` - ativos estáticos
+- `vite.config.js` - configuração do Vite
+- `package.json` - dependências e scripts

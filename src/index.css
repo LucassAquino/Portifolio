@@ -1,4 +1,4 @@
-:root {
+  :root {
   --bg: #0c0c0c;
   --text: #00ff66;
   --accent: #00cc55;
@@ -81,7 +81,7 @@ nav.active {
 }
 
 section {
-  padding: 40px 20px;
+  padding: 20px 10px;
   max-width: 900px;
   margin: auto;
 }
@@ -229,3 +229,68 @@ footer {
 .search-bar:focus {
   border-color: #00ff99;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 30px auto;
+  background: #0f0f0f;
+  padding: 25px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  box-shadow: 0 0 8px #002b1a;
+}
+
+.contact-form label {
+  color: var(--accent);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #0c0c0c;
+  border: 1px solid var(--accent);
+  color: var(--text);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: var(--font);
+  resize: none;
+}
+
+.contact-form button {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.contact-form button:hover {
+  background: #00ff99;
+  transform: scale(1.05);
+}
+
+.details-btn {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font);
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+  margin-top: 10px;
+}
+
+.details-btn:hover {
+  background: #00ff99;
+  transform: scale(1.05);
+}
+

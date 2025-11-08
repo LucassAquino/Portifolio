@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Routes } from '../routes/Routes'
+import { Link } from "react-router";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -7,7 +9,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <h1 className="logo">&lt;Lucas_Aquino /&gt;</h1>
+      <Link to={Routes.Root}><h1 className="logo">&lt;Lucas_Aquino /&gt;</h1></Link>
 
       <div className="menu-toggle" onClick={toggleMenu}>
         <span></span>
@@ -16,9 +18,8 @@ export default function Header() {
       </div>
 
       <nav className={menuOpen ? 'active' : ''} onClick={() => setMenuOpen(false)}>
-        <a href="#home">home</a>
-        <a href="#projects">projetos</a>
-        <a href="#contact">contato</a>
+        <Link to={Routes.Root}><a>curriculo</a></Link>
+        <Link to={Routes.Contact}><a>contato</a></Link>
       </nav>
     </header>
   )
